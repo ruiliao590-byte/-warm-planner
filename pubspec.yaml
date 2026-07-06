@@ -42,6 +42,17 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.14.1
 
 flutter:
   uses-material-design: true
+
+# 应用图标生成配置（运行：dart run flutter_launcher_icons）
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/icon/icon.png"
+  min_sdk_android: 21
+  # 自适应图标（Android 8+）：暖白底 + 图片前景
+  adaptive_icon_background: "#FAF9F5"
+  adaptive_icon_foreground: "assets/icon/icon.png"

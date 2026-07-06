@@ -8,7 +8,7 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
     <uses-permission android:name="android.permission.VIBRATE"/>
     <application
-        android:label="计划 · 记录"
+        android:label="瑞包"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
