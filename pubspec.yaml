@@ -53,6 +53,6 @@ flutter_launcher_icons:
   ios: false
   image_path: "assets/icon/icon.png"
   min_sdk_android: 21
-  # 自适应图标（Android 8+）：暖白底 + 图片前景
-  adaptive_icon_background: "#FAF9F5"
+  # 自适应图标（Android 8+）：白底 + 图片前景（新图标本身白底，避免边框色差）
+  adaptive_icon_background: "#FFFFFF"
   adaptive_icon_foreground: "assets/icon/icon.png"
