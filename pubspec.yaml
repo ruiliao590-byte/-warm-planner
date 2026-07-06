@@ -1,0 +1,47 @@
+name: warm_planner
+description: "个人专属「计划 + 记录」双生态 AI 助理 App（温暖米白风）"
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # 状态管理 / 依赖注入（Repository 接口的本地/云端实现在此处切换）
+  flutter_riverpod: ^2.5.1
+
+  # 本地数据库（关系型，适合“目标进度=已完成/总数”这类聚合统计）
+  sqflite: ^2.3.3
+  path: ^1.9.0
+  path_provider: ^2.1.3
+
+  # AI 调用（DeepSeek 兼容 OpenAI chat/completions）
+  http: ^1.2.1
+
+  # 工具
+  intl: ^0.20.2
+  uuid: ^4.4.0
+
+  # 本地通知（任务定时提醒 · 到点推送）
+  flutter_local_notifications: ^18.0.1
+  timezone: ^0.9.4
+
+  # 数据导出 / 导入（备份恢复）
+  # 用 Flutter 官方维护的 file_selector 选文件（与最新 Flutter 工具链兼容更好）
+  file_selector: ^1.0.3
+  share_plus: ^10.1.4
+
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
